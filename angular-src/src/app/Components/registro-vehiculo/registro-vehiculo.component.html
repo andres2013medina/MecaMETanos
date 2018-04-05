@@ -1,0 +1,54 @@
+<div style="min-height: 80vh;" class="container">
+<div class="row">
+  <h1> Registro de Vehículo</h1>
+    <form (submit) = "onRegisterSubmit()" class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="serial" type="text" [(ngModel)]= "serial" name = "serial" class="validate">
+          <label for="serial">Serial del Motor</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="modelo" type="text" [(ngModel)]= "modelo" name = "modelo" class="validate">
+          <label for="modelo">Modelo</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="year" type="text" [(ngModel)]= "year" name = "year" class="validate">
+          <label for="year">Año</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="placa" type="text" [(ngModel)]= "placa" name = "placa" class="validate">
+          <label for="placa">Placa</label>
+        </div>
+      </div>
+    
+      
+       <button type="submit" class="btn btn-primary">Registrar</button>
+    </form>
+  </div>
+</div>
+
+<footer class="page-footer black">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Mecamet C.A</h5>
+          <p class="grey-text text-lighten-4">Todos los derechos reservados.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          
+          <ul>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2018 Copyright Text
+      <a class="grey-text text-lighten-4 right" href="#!"></a>
+      </div>
+    </div>
+  </footer>
+      

@@ -1,0 +1,75 @@
+<div style="min-height: 60vh;" class="container">
+<div class="row">
+  <h1> Asignar Fecha</h1>
+
+<table class="responsive-table">
+        <thead>
+          <tr>
+              <th *ngFor="let col of columnas">{{col}}</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr *ngFor="let cita of citas">
+            <td *ngFor="let col of columnas" >{{cita[col]}}</td>
+            Asignar Fecha <a class="btn-floating btn-tiny waves-effect waves-light red" (click)="onClick(cita)"><i class="material-icons">today</i></a>
+          </tr>
+        </tbody>
+      </table>
+  <h1> </h1>
+    <div *ngIf="selectedCita">
+
+    
+         <br>
+      <form (submit)="onAsignarFecha()" class="col s12">
+      <div class="row">
+        <div class="col s6">
+        <label for="serial">Fecha de la Cita</label>
+          <input id="date" type="date" [(ngModel)]= "selectedCita.fechaAsignada" name = "fecha" class="validate">
+          
+        </div>
+        <div class="col s6">
+          <label for="hora">Hora</label>
+          <input id="hora" type="text" [(ngModel)]= "selectedCita.Hora" name = "hora" class="validate">
+          
+        </div>
+      </div>
+     <h1></h1>
+       <button type="submit" class="btn btn-primary">Asignar Fecha</button>
+    </form>
+</div>
+
+    
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<footer class="page-footer black">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Mecamet C.A</h5>
+          <p class="grey-text text-lighten-4">Todos los derechos reservados.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          
+          <ul>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2018 Copyright Text
+      <a class="grey-text text-lighten-4 right" href="#!"></a>
+      </div>
+    </div>
+  </footer>

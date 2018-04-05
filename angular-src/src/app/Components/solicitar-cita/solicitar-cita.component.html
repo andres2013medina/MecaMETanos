@@ -1,0 +1,47 @@
+<div style="min-height: 60vh;" class="container">
+  <div class="row">
+    <h1> Solicitar Cita</h1>
+    <form (submit)="onRegisterSubmit()" class="col s12">
+      <div class="row">
+      </div>
+      <select [(ngModel)]= "idVehiculo" name = "idVehiculo" class="browser-default">
+      <option value="" disabled selected>Seleccione el vehículo</option>
+       <option *ngFor="let vehiculo of vehiculos" [ngValue]="vehiculo.idVehiculo">{{ vehiculo.Modelo }}</option>
+    </select>
+     <h1></h1>
+    <button type="submit" class="btn btn-primary">Solicitar</button>
+    </form>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+  <footer class="page-footer black">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Mecamet C.A</h5>
+            <p class="grey-text text-lighten-4">Todos los derechos reservados.</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            
+            <ul>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        © 2018 Copyright Text
+        <a class="grey-text text-lighten-4 right" href="#!"></a>
+        </div>
+      </div>
+    </footer>
+        

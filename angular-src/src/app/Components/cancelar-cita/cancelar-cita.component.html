@@ -1,0 +1,52 @@
+<div style="min-height: 70vh;"class="container">
+  <div class="row">
+    <h1> Cancelar Cita</h1>
+    
+     
+      <table class="responsive-table">
+        <thead>
+          <tr>
+              <th *ngFor="let col of columnas">{{col}}</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr *ngFor="let cita of citas">
+            <td *ngFor="let col of columnas" >{{cita[col]}}</td>
+            <a class="btn-floating btn-tiny waves-effect waves-light red" (click)="onClick(cita)"><i class="material-icons">edit</i></a>
+          </tr>
+        </tbody>
+      </table>
+     <br>
+     <br>
+      <form (submit)="onDeleteSubmit()" class="col s12">
+    <button type="submit" class="btn btn-primary">Cancelar</button>
+
+    </form>
+  </div>
+</div>
+    
+      <footer class="page-footer black">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Mecamet C.A</h5>
+                <p class="grey-text text-lighten-4">Todos los derechos reservados.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                
+                <ul>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2018 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!"></a>
+            </div>
+          </div>
+        </footer>
+    
+            
